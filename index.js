@@ -199,6 +199,10 @@ focus.drive(1);
  */
 function isEvenNumberAsync(number) {
   // ✨ implement
+  if (number % 2 === 0) {
+    return Promise.resolve(true);
+  }
+  return Promise.resolve(false);
 }
 
 module.exports = {
